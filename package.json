@@ -1,0 +1,39 @@
+{
+  "name": "narad",
+  "description": "Node library for Narad API",
+  "version": "0.0.10",
+  "author": {
+    "name": "Hitesh",
+    "email": "me@hiteshjoshi.com"
+  },
+  "dependencies": {
+    "request": "=2.9.203"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "narad",
+    "pusher",
+    "websockets",
+    "realtime"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hiteshjoshi/narad-node"
+  },
+  "main": "index",
+  "engines": {
+    "node": ">= 0.4.3"
+  },
+  "readme": "# A Node Client for Narad\n## Installation\n```bash\n$ npm install narad\n```\n## How to use\n```javascript\n\nvar Narad = require('narad');\n\nvar narad = new Narad({\n  appId: 'YOUR-PUSHER-APP-ID',\n  key: 'YOUR-PUSHER-APP-ID',\n  secret: 'YOUR-PUSHER-SECRET-KEY',\n  domain: 'narad.example.com', //defaults to localhost\n  port: 4567 // defaults to 4567\n});\n\nvar channel = 'lobby',\n    event = 'message',\n    data = {\n      from: 'David',\n      content: 'Hello World'\n    };\n\nnarad.trigger(channel, event, data, function (err, req, res) {\n  //do something (callback is optional)\n});\n\n```\n## Credits\nThis library borrows heavily from [node-pusher](https://github.com/crossbreeze/node-pusher), which is not compatible with narad.\n\n\n## License\nThis code is free to user under the terms of the MIT license.",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/hitesh/narad-node/issues"
+  },
+  "homepage": "https://github.com/hitesh/narad-node",
+  "_id": "narad@0.0.6",
+  "dist": {
+    "shasum": "5aa05b64a78ab1e0dee7b3f6dfa89d3ac17d6a5f"
+  },
+  "_from": "narad@",
+  "_resolved": "https://registry.npmjs.org/narad/-/narad-0.0.6.tgz"
+}
