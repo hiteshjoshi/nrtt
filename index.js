@@ -1,1 +1,1 @@
-module.exports = require('./lib/slanger');
+module.exports = require('./lib/narad');
